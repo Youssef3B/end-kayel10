@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      body {
+        display: none;
+        background-color: #f0f0f0; /* Set your background color */
+      }
+
+      /* Animation keyframes */
+      @keyframes pulse {
+        0% {
+          opacity: 0.6;
+        }
+        50% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0.6;
+        }
+      }
+    </style>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kayley Consulting</title>
+    <link rel="icon" type="image/x-icon" href="images/logo icon.png" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="dark-mode.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <!-- Include Slick.js -->
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Slick Carousel CDN (CSS and JS) -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="slick.js"></script>
+    <script src="slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/3.0.1/js.cookie.min.js"></script>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+  />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <body>
+    <div id="loading-message"></div>
+    <script>
+      window.addEventListener("load", function () {
+        // Simulate a 1-second delay
+        setTimeout(function () {
+          document.body.style.display = "block";
+          document.getElementById("loading-message").style.display = "none";
+        }, 1); // 1000 milliseconds = 1 second
+      });
+    </script>
+    <div class="content">
+      <!------------------------------------------------ Icone Up ------------------------------------->
+      <div data-aos="fade-up" data-aos-duration="1100" id="up">
+        <i class="bi bi-arrow-up"></i>
+      </div>
+      <script>
+        let up = document.getElementById("up");
+
+        // Function to scroll to the top of the page with animation
+        function scrollToTop() {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
+        }
+
+        // Event listener to show/hide the button based on scroll position
+
+        // Event listener to scroll to top when the button is clicked
+        up.addEventListener("click", scrollToTop);
+      </script>
+
+      <!------------------------------------------------ Hero section ------------------------------------->
+      <section id="hero_section" class="Hero_section">
+        <nav id="myNavbar" class="navbar navbar-expand-lg bg-transparent">
+          <div class="container">
+            <a
+              data-aos="fade-up"
+              data-aos-duration="1200"
+              class="navbar-brand"
+              href="index.html"
+              ><img
+                id="logo_logo"
+                class="logo-light"
+                src="images/logo.png"
+                alt="Light Mode Logo"
+              />
+              <img
+                id="logo_logo_dark"
+                class="logo-dark"
+                src="images/logodark.png"
+                alt="Dark Mode Logo"
+              />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class=""><i class="bi bi-list fs-1"></i></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                class="navbar-nav mx-auto mb-2 mb-lg-0"
+              >
+                <li class="nav-item">
+                  <a
+                    data-translation-key="home"
+                    class="nav-link active"
+                    aria-current="page"
+                    href="index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    aria-current="page"
+                    data-translation-key="about"
+                    class="nav-link"
+                    href="about.html"
+                    >About Us</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    aria-current="page"
+                    data-translation-key="service"
+                    class="nav-link"
+                    href="services.html"
+                    >Service</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    aria-current="page"
+                    data-translation-key="blog"
+                    class="nav-link"
+                    href="news.html"
+                    >Blog</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    aria-current="page"
+                    data-translation-key="contact"
+                    class="nav-link"
+                    href="contact.html"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+              <form
+                data-aos="fade-up"
+                data-aos-duration="1200"
+                class="d-flex align-items-center"
+                role="search"
+              >
+                <i id="darkmode-toggle" class="bi bi-moon-stars-fill me-3"></i>
+
+                <a id="switch-to-fr">Fr</a>
+                <a class="text-orange" id="switch-to-en">En</a>
+
+                <a
+                  href="contact.html"
+                  class="button d-flex justify-content-center align-items-center text-white"
+                >
+                  <span class="button-content">Get in touch</span>
+                </a>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <script>
+          $(document).ready(function () {
+            $(".navbar-toggler").click(function () {
+              $("#myNavbar").toggleClass("bg-transparent bg-white"); // Change bg-white to bg-dark
+            });
+          });
+        </script>
+
+        <div class="home_hero">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="left animate__animated animate__fadeInDown">
+                  <h1 class="" aria-current="page">People.</h1>
+                  <h1 data-aos="fade-right" data-aos-duration="1300">
+                    <span
+                      aria-current="page"
+                      data-translation-key="hero_section_title2"
+                      >Technology,</span
+                    >
+                    <span
+                      aria-current="page"
+                      data-translation-key="hero_section_title3"
+                      class="business"
+                      >Business.</span
+                    >
+                  </h1>
+                  <p
+                    aria-current="page"
+                    data-translation-key="hero_section_desc1"
+                    data-aos="fade-right"
+                    data-aos-duration="1500"
+                  >
+                    Rethinking talents,
+                  </p>
+                  <p
+                    aria-current="page"
+                    data-translation-key="hero_section_desc2"
+                    data-aos="fade-right"
+                    data-aos-duration="1500"
+                    class=""
+                  >
+                    promoting digital transformation and creating values
+                  </p>
+                  <button
+                    id="contactButton"
+                    data-aos="fade-right"
+                    data-aos-duration="1600"
+                    class="button"
+                  >
+                    <span
+                      aria-current="page"
+                      data-translation-key="hero_section_btn"
+                      class="button-content"
+                      >Contact us</span
+                    >
+                  </button>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="right">
+                  <div class="circ"></div>
+                  <img
+                    id="man"
+                    class="man_home"
+                    src="images/man_hero.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <img
+          data-aos="zoom-out-up"
+          id="effect1"
+          src="images/effect1.png"
+          alt=""
+        />
+        <img
+          data-aos="zoom-out-up"
+          id="effect2"
+          src="images/effect2.png"
+          alt=""
+        />
+        <img
+          data-aos="zoom-out-up"
+          id="effect3"
+          src="images/effect3.png"
+          alt=""
+        />
+        <img
+          data-aos="zoom-out-up"
+          id="effect4"
+          src="images/effect4.png"
+          alt=""
+        />
+        <img
+          data-aos="zoom-out-up"
+          id="effect5"
+          src="images/effect1.png"
+          alt=""
+        />
+        <img
+          data-aos="zoom-out-up"
+          id="effect6"
+          src="images/effect2.png"
+          alt=""
+        />
+        <img
+          data-aos="zoom-out-up"
+          id="effect7"
+          src="images/effect3.png"
+          alt=""
+        />
+        <img
+          data-aos="zoom-out-up"
+          id="effect8"
+          src="images/effect4.png"
+          alt=""
+        />
+      </section>
+      <!------------------------------------------------ Stats ------------------------------------->
+      <section class="stats">
+        <div class="container">
+          <div class="row">
+            <div class="">
+              <div class="cards">
+                <h4 class="count" data-target="50+">0+</h4>
+                <i class="bi bi-person"></i>
+                <p aria-current="page" data-translation-key="stat1">
+                  Satisfied Clients
+                </p>
+              </div>
+            </div>
+            <div class="">
+              <div class="cards">
+                <h4 class="count" data-target="60">0</h4>
+                <i class="bi bi-check-square"></i>
+                <p aria-current="page" data-translation-key="stat2">
+                  Completed Project
+                </p>
+              </div>
+            </div>
+            <div class="">
+              <div class="cards">
+                <h4 class="count" data-target="120">120</h4>
+                <i class="bi bi-people"></i>
+                <p aria-current="page" data-translation-key="stat3">
+                  Colleagues
+                </p>
+              </div>
+            </div>
+            <div class="">
+              <div class="cards">
+                <h4 class="count" data-target="95%"></h4>
+                <i class="bi bi-clipboard2-pulse"></i>
+                <p aria-current="page" data-translation-key="stat4">
+                  success Rate
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!------------------------------------------------ Branding ------------------------------------->
+      <section class="branding">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="left d-flex animate__animated animate__fadeInLeft">
+                <img
+                  data-aos="fade-up"
+                  data-aos-duration="1200"
+                  class="image_special me-3"
+                  src="images/1.jpg"
+                  alt=""
+                />
+                <img
+                  data-aos="fade-up"
+                  data-aos-duration="1400"
+                  class=""
+                  src="images/4.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="right">
+                <h5 data-aos="fade-up" data-aos-duration="1000">Branding</h5>
+                <h2
+                  aria-current="page"
+                  data-translation-key="branding_title1"
+                  data-aos="fade-up"
+                  data-aos-duration="1200"
+                >
+                  Powered
+                </h2>
+                <h2 data-aos="fade-up" data-aos-duration="1300" class="mb-3">
+                  <span
+                    aria-current="page"
+                    data-translation-key="branding_title2"
+                    class="knowledge"
+                    >By Knowledge</span
+                  >
+                </h2>
+                <p
+                  aria-current="page"
+                  data-translation-key="branding_description"
+                  class="fs-5"
+                  data-aos="fade-up"
+                  data-aos-duration="1300"
+                >
+                  Kayley is supporting its customers to create and manage
+                  changes that matter. Our team includes
+                  <span class="fw-bolder">passionate senior engineers.</span>
+                  They joined Kayley for the opportunity to apply their talents
+                  to complex challenges. Kayley has a strong commitment to
+                  <span class="fw-bolder">promoting diversity</span> and
+                  <span class="fw-bolder">inclusion.</span> We're present in
+                  <span class="fw-bolder">Luxembourg, Belgium, UK</span> and
+                  <span class="fw-bolder">France</span>. Kayley is
+                  <span class="fw-bolder">fully compliant</span>
+                  with all in country <span class="fw-bolder">taxes</span> and
+                  <span class="fw-bolder">social security</span> legislations.
+                </p>
+                <button
+                  id="aboutButton"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  class="button"
+                >
+                  <span
+                    aria-current="page"
+                    data-translation-key="branding_btn"
+                    class="button-content"
+                  >
+                    Learn More <i class="bi bi-chevron-right"></i>
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <script></script>
+      <section class="industries">
+        <div class="container">
+          <div class="row">
+            <h5
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              aria-current="page"
+              data-translation-key="industries_cat"
+            >
+              Our industries
+            </h5>
+            <h2
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              aria-current="page"
+              data-translation-key="industries_title"
+            >
+              Why Choose Us
+            </h2>
+            <div class="col-lg-6">
+              <div
+                class="cards mt-3"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
+                <div class="overlay">
+                  <img src="images/home1.jpg" class="" alt="" />
+                </div>
+                <h4>Kayley IT</h4>
+                <p aria-current="page" data-translation-key="industries_desc1">
+                  In today’s modern landscape, IT plays a massive role in the
+                  way we do business. From development, IT Systems, Business
+                  applications, Network security, Cloud, Virtualisation to
+                  Plaforms with AI applications. In order to maximize your
+                  competitivness and boost your innovation, Kayley offers a
+                  robust portfolio of IT consulting services.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div
+                class="cards mt-3"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
+                <div class="overlay">
+                  <img src="images/11.jpg" class="" alt="" />
+                </div>
+                <h4>Kayley Telecome</h4>
+                <p aria-current="page" data-translation-key="industries_desc2">
+                  The 3GPP standards are moving fast pushing for more Network,
+                  IT & AI convergence. This leads to a new and complex ecosystem
+                  which requires specific knowledge, talent and experience. As a
+                  specialist in this area, Kayley can provide the right
+                  expertise from design, testing, implementation till final
+                  acceptance.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!------------------------------------------------ Services ------------------------------------->
+      <section class="services">
+        <div class="container">
+          <div class="row">
+            <h5 data-aos="fade-up" data-aos-duration="1600">Services</h5>
+            <h2
+              aria-current="page"
+              data-translation-key="services_title"
+              data-aos="fade-up"
+              data-aos-duration="1300"
+            >
+              Get Our Best Solutions For Your <br />
+              Business Growth
+            </h2>
+            <div class="col-lg-4 col-md-6 mt-3">
+              <div
+                class="cards"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                onclick="ser()"
+              >
+                <div class="overlay"></div>
+                <div class="down">
+                  <i class="bi bi-people"></i>
+                  <h3
+                    aria-current="page"
+                    data-translation-key="services_title_card1"
+                  >
+                    Consulting Services
+                  </h3>
+                  <p
+                    aria-current="page"
+                    data-translation-key="services_desc_card1"
+                  >
+                    We offer our customers passionate and talent experts in
+                    different domains : engineering, HR and Project Management.
+                    We understand role specs and backgrounds. We help
+                    organizations craft better diversity strategy.
+                  </p>
+                  <a href="#"
+                    >Learn More <i class="bi bi-arrow-right ms-1"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mt-3">
+              <div
+                class="cards"
+                data-aos="fade-up"
+                data-aos-duration="1100"
+                onclick="ser()"
+              >
+                <div class="overlay"></div>
+                <div class="down">
+                  <i class="bi bi-journal"></i>
+                  <h3
+                    aria-current="page"
+                    data-translation-key="services_title_card2"
+                  >
+                    Payroll Management Services
+                  </h3>
+                  <p
+                    aria-current="page"
+                    data-translation-key="services_desc_card2"
+                  >
+                    We offer permanent contracts to all our collaborators. We
+                    manage entire payroll life cycle. We support both agencies
+                    and contractors to comply with in country labor regulations.
+                  </p>
+                  <a href="#"
+                    >Learn More <i class="bi bi-arrow-right ms-1"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mt-3">
+              <div
+                class="cards"
+                data-aos="fade-up"
+                data-aos-duration="1200"
+                onclick="ser()"
+              >
+                <div class="overlay"></div>
+                <div class="down">
+                  <i class="bi bi-globe"></i>
+                  <h3
+                    aria-current="page"
+                    data-translation-key="services_title_card3"
+                  >
+                    Branding
+                  </h3>
+                  <p
+                    aria-current="page"
+                    data-translation-key="services_desc_card3"
+                  >
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Harum et, qui eos asperiores eaque rem, exercitationem quis
+                    accusamus magnam earum voluptate
+                  </p>
+                  <a href="#"
+                    >Learn More <i class="bi bi-arrow-right ms-1"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mt-3">
+              <div
+                class="cards"
+                data-aos="fade-up"
+                data-aos-duration="1300"
+                onclick="ser()"
+              >
+                <div class="overlay"></div>
+                <div class="down">
+                  <i class="bi bi-graph-up-arrow"></i>
+                  <h3
+                    aria-current="page"
+                    data-translation-key="services_title_card4"
+                  >
+                    Branding
+                  </h3>
+                  <p
+                    aria-current="page"
+                    data-translation-key="services_desc_card4"
+                  >
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Harum et, qui eos asperiores eaque rem, exercitationem quis
+                    accusamus magnam earum voluptate
+                  </p>
+                  <a href="#"
+                    >Learn More <i class="bi bi-arrow-right ms-1"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mt-3">
+              <div
+                class="cards"
+                data-aos="fade-up"
+                data-aos-duration="1400"
+                onclick="ser()"
+              >
+                <div class="overlay"></div>
+                <div class="down">
+                  <i class="bi bi-check-square"></i>
+                  <h3
+                    aria-current="page"
+                    data-translation-key="services_title_card5"
+                  >
+                    Branding
+                  </h3>
+                  <p
+                    aria-current="page"
+                    data-translation-key="services_desc_card5"
+                  >
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Harum et, qui eos asperiores eaque rem, exercitationem quis
+                    accusamus magnam earum voluptate
+                  </p>
+                  <a href="#"
+                    >Learn More <i class="bi bi-arrow-right ms-1"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mt-3">
+              <div
+                class="cards"
+                data-aos="fade-up"
+                data-aos-duration="1500"
+                onclick="ser()"
+              >
+                <div class="overlay"></div>
+                <div class="down">
+                  <i class="bi bi-pie-chart"></i>
+                  <h3
+                    aria-current="page"
+                    data-translation-key="services_title_card6"
+                  >
+                    Branding
+                  </h3>
+                  <p
+                    aria-current="page"
+                    data-translation-key="services_desc_card6"
+                  >
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Harum et, qui eos asperiores eaque rem, exercitationem quis
+                    accusamus magnam earum voluptate
+                  </p>
+                  <a href="#"
+                    >Learn More <i class="bi bi-arrow-right ms-1"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!------------------------------------------------ industries ------------------------------------->
+      <section class="news">
+        <div class="container">
+          <div class="row">
+            <h5
+              aria-current="page"
+              data-translation-key="news_cat"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              News
+            </h5>
+            <h2
+              aria-current="page"
+              data-translation-key="news_title"
+              data-aos="fade-up"
+              data-aos-duration="1100"
+            >
+              Read Our News Post
+            </h2>
+            <div class="slider" data-aos="fade-up" data-aos-duration="1000">
+              <!-- First col-lg-6 div -->
+              <div class="col-lg-6 me-2">
+                <div class="cards" onclick="navigateToBlogPage(4)">
+                  <div>
+                    <img src="images/blog4.jpg" alt="" />
+                  </div>
+                  <div class="text-center p-4">
+                    <h4
+                      aria-current="page"
+                      data-translation-key="news4_title"
+                      class=""
+                    ></h4>
+
+                    <a
+                      aria-current="page"
+                      data-translation-key="news_read_more"
+                      class=""
+                      href="#"
+                      >Read More <i class="bi bi-arrow-right"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <!-- Second col-lg-6 div -->
+              <div class="col-lg-6 me-2">
+                <div class="cards" onclick="navigateToBlogPage(7)">
+                  <div>
+                    <img src="images/blog7.jpg" alt="" />
+                  </div>
+                  <div class="text-center p-4">
+                    <h4
+                      aria-current="page"
+                      data-translation-key="news7_title"
+                      class=""
+                      class=""
+                    >
+                      IT
+                    </h4>
+
+                    <a
+                      aria-current="page"
+                      data-translation-key="news_read_more"
+                      class=""
+                      href="#"
+                      >Read More <i class="bi bi-arrow-right"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <!-- Third col-lg-6 div -->
+              <div class="col-lg-6 me-2">
+                <div class="cards" onclick="navigateToBlogPage(9)">
+                  <div>
+                    <img src="images/blog9.jpg" alt="" />
+                  </div>
+                  <div class="text-center p-4">
+                    <h4
+                      aria-current="page"
+                      data-translation-key="news9_title"
+                      class=""
+                    >
+                      IT
+                    </h4>
+
+                    <a
+                      aria-current="page"
+                      data-translation-key="news_read_more"
+                      class=""
+                      href="#"
+                      >Read More <i class="bi bi-arrow-right"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <script>
+        // Delay the execution of the script by 1 second
+        setTimeout(function () {
+          $(document).ready(function () {
+            $(".slider").slick({
+              slidesToShow: 2, // Show 2 slides at a time
+              slidesToScroll: 1, // Scroll 1 slide at a time
+              autoplay: true, // Autoplay the slider
+              autoplaySpeed: 2000, // Autoplay speed in milliseconds (3 seconds)
+              dots: true, // Show navigation dots
+              responsive: [
+                {
+                  breakpoint: 768, // Breakpoint for smaller screens
+                  settings: {
+                    slidesToShow: 1, // Show 1 slide at a time on smaller screens
+                  },
+                },
+              ],
+            });
+          });
+        }, 1000); // 1000 milliseconds = 1 second
+      </script>
+
+      <!------------------------------------------------ industries ------------------------------------->
+
+      <!------------------------------------------------ Join ------------------------------------->
+      <section class="join">
+        <div class="container">
+          <div class="row">
+            <h4
+              aria-current="page"
+              data-translation-key="join_title1"
+              class="mb-3"
+            >
+              JOIN OUR COMMUNITY
+            </h4>
+            <h1 aria-current="page" data-translation-key="join_title2">
+              We are trusted by over 5000+ clients. Join them by using our
+              services and grow your business.
+            </h1>
+            <a class="button" href="contact.html">
+              <span
+                aria-current="page"
+                data-translation-key="join_btn"
+                class="button-content"
+                >Join Us</span
+              >
+            </a>
+          </div>
+        </div>
+      </section>
+      <!------------------------------------------------ Footer ------------------------------------->
+      <footer id="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 mt-4">
+              <img id="logo_footer" class="logo" src="images/logo.png" alt="" />
+              <img
+                id="logo_footer_dark"
+                class="logo"
+                src="images/logodark.png"
+                alt=""
+              />
+              <p aria-current="page" data-translation-key="footer_desc">
+                Kayley is supporting its customers to create and manage changes
+                that matter. Our team includes passionate senior engineers. They
+                joined Kayley for the opportunity to apply their talents to
+                complex challenges. Kayley has a strong commitment to promoting
+                diversity and inclusion. We're present in Luxembourg, Belgium,
+                UK and France. Kayley is fully compliant with all in country
+                taxes and social security legislations.
+              </p>
+              <div class="icones d-flex mt-5">
+                <div class="icone me-3">
+                  <a
+                    href="https://www.linkedin.com/company/kayley/"
+                    target="_blank"
+                    ><i class="bi bi-instagram"></i
+                  ></a>
+                </div>
+                <div class="icone me-3">
+                  <a
+                    href="https://www.linkedin.com/company/kayley/"
+                    target="_blank"
+                    ><i class="bi bi-twitter"></i
+                  ></a>
+                </div>
+                <div class="icone me-3">
+                  <a
+                    href="https://www.linkedin.com/company/kayley/"
+                    target="_blank"
+                    ><i class="bi bi-facebook"></i
+                  ></a>
+                </div>
+                <div class="icone me-3">
+                  <a
+                    href="https://www.linkedin.com/company/kayley/"
+                    target="_blank"
+                    ><i class="bi bi-linkedin"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 mt-4">
+              <h3>Disvover</h3>
+              <ul>
+                <li><a href="">Learn</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Pricing</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 mt-4">
+              <h3>Links</h3>
+              <ul>
+                <li>
+                  <a
+                    aria-current="page"
+                    data-translation-key="about"
+                    href="about.html"
+                    >About Us</a
+                  >
+                </li>
+                <li>
+                  <a
+                    aria-current="page"
+                    data-translation-key="service"
+                    href="services.html"
+                    >Services</a
+                  >
+                </li>
+                <li>
+                  <a
+                    aria-current="page"
+                    data-translation-key="blog"
+                    href="blog.html"
+                    >Blog</a
+                  >
+                </li>
+                <li>
+                  <a
+                    aria-current="page"
+                    data-translation-key="contact"
+                    href="contact.html"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3 mt-4">
+              <h3>Get In Touch</h3>
+              <p>50 Rte de Grundhof, 6550 Berdorf, Luxembourg</p>
+              <div class="mt-5">
+                <div class="d-flex align-items-center">
+                  <i id="catagorie4" class="bi bi-telephone-fill me-3 fs-5"></i>
+                  <h6>+352 691 530 000</h6>
+                </div>
+                <div class="d-flex align-items-center mt-3">
+                  <i id="catagorie4" class="bi bi-envelope-fill me-3 fs-5"></i>
+                  <h6>Kayley@consulting.com</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="line"></div>
+          <p class="text-center">
+            @ 2023 All Rights Reserved By Kayley Consulting
+          </p>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      // Wait for the DOM to load
+      document.addEventListener("DOMContentLoaded", function () {
+        // Simulate a 1-second delay (adjust the delay as needed)
+        setTimeout(function () {
+          // Hide the loading message by adding the "hide" class
+          document.getElementById("loading-message").classList.add("hide");
+
+          // Initialize AOS
+          AOS.init();
+        }, 200); // 1000 milliseconds = 1 second
+      });
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      console.log("Initializing AOS...");
+      document.addEventListener("DOMContentLoaded", function () {
+        AOS.init();
+        console.log("AOS initialized.");
+      });
+    </script>
+
+    <script src="links.js"></script>
+    <script src="darkmode.js"></script>
+    <script src="languages.js"></script>
+    <script src="script.js"></script>
+    <script src="load.js"></script>
+  </body>
+</html>

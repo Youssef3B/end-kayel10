@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      body {
+        display: none;
+        background-color: #f0f0f0; /* Set your background color */
+        animation: pulse;
+      }
+
+      /* Animation keyframes */
+      @keyframes pulse {
+        0% {
+          opacity: 0.6;
+        }
+        50% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0.6;
+        }
+      }
+    </style>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kayley Consulting</title>
+    <link rel="icon" type="image/x-icon" href="images/logo icon.png" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="dark-mode.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <!-- Include Slick.js -->
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Slick Carousel CDN (CSS and JS) -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="slick.js"></script>
+    <script src="slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/3.0.1/js.cookie.min.js"></script>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+  />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <body>
+    <div id="loading-message"></div>
+    <script>
+      window.addEventListener("load", function () {
+        // Simulate a 1-second delay
+        setTimeout(function () {
+          document.body.style.display = "initial";
+          document.getElementById("loading-message").style.display = "none";
+        }, 1); // 1000 milliseconds = 1 second
+      });
+    </script>
+    <!------------------------------------------------ Icone Up ------------------------------------->
+    <div data-aos="fade-up" data-aos-duration="1100" id="up">
+      <i class="bi bi-arrow-up"></i>
+    </div>
+    <script>
+      let up = document.getElementById("up");
+
+      // Function to scroll to the top of the page with animation
+      function scrollToTop() {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      }
+
+      // Event listener to show/hide the button based on scroll position
+
+      // Event listener to scroll to top when the button is clicked
+      up.addEventListener("click", scrollToTop);
+    </script>
+    <!------------------------------------------------ Hero section ------------------------------------->
+    <section id="mobile_header" class="Hero_section">
+      <nav id="myNavbar" class="navbar navbar-expand-lg bg-transparent">
+        <div class="container">
+          <a
+            data-aos="fade-up"
+            data-aos-duration="1200"
+            class="navbar-brand"
+            href="index.html"
+            ><img
+              id="logo_logo"
+              class="logo-light"
+              src="images/logo.png"
+              alt="Light Mode Logo"
+            />
+            <img
+              id="logo_logo_dark"
+              class="logo-dark"
+              src="images/logodark.png"
+              alt="Dark Mode Logo"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class=""><i class="bi bi-list fs-1"></i></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              class="navbar-nav mx-auto mb-2 mb-lg-0"
+            >
+              <li class="nav-item">
+                <a
+                  data-translation-key="home"
+                  class="nav-link"
+                  aria-current="page"
+                  href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  aria-current="page"
+                  data-translation-key="about"
+                  class="nav-link"
+                  href="about.html"
+                  >About Us</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  aria-current="page"
+                  data-translation-key="service"
+                  class="nav-link"
+                  href="services.html"
+                  >Service</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  aria-current="page"
+                  data-translation-key="blog"
+                  class="nav-link"
+                  href="news.html"
+                  >Blog</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  aria-current="page"
+                  data-translation-key="contact"
+                  class="nav-link active"
+                  href="contact.html"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+            <form
+              data-aos="fade-up"
+              data-aos-duration="1200"
+              class="d-flex align-items-center"
+              role="search"
+            >
+              <i id="darkmode-toggle" class="bi bi-moon-stars-fill me-3"></i>
+
+              <a id="switch-to-fr">Fr</a>
+              <a class="text-orange" id="switch-to-en">En</a>
+
+              <a
+                href="contact.html"
+                class="button d-flex justify-content-center align-items-center text-white"
+              >
+                <span class="button-content">Get in touch</span>
+              </a>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <script>
+        $(document).ready(function () {
+          $(".navbar-toggler").click(function () {
+            $("#myNavbar").toggleClass("bg-transparent bg-white"); // Change bg-white to bg-dark
+          });
+        });
+      </script>
+      <section id="up_sec" class="container">
+        <div class="row">
+          <h1
+            class="text-center fw-bolder mt-5 left animate__animated animate__fadeInDown"
+            data-aos="fade-up"
+            data-aos-duration="1100"
+            aria-current="page"
+            data-translation-key="contact"
+          >
+            Contact Us
+          </h1>
+        </div>
+      </section>
+
+      <img id="effect1" src="images/effect1.png" alt="" />
+      <img id="effect2" src="images/effect2.png" alt="" />
+      <img id="effect3" src="images/effect3.png" alt="" />
+      <img id="effect4" src="images/effect4.png" alt="" />
+      <img id="effect5" src="images/effect1.png" alt="" />
+      <img id="effect6" src="images/effect2.png" alt="" />
+      <img id="effect7" src="images/effect3.png" alt="" />
+      <img id="effect8" src="images/effect4.png" alt="" />
+    </section>
+
+    <section class="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 mt-5 animate__animated animate__fadeInLeft">
+            <h5
+              aria-current="page"
+              data-translation-key="contact_cataegory"
+              data-aos="fade-up"
+              data-aos-duration="1100"
+            >
+              Contact us
+            </h5>
+            <h2
+              aria-current="page"
+              data-translation-key="contact_title"
+              data-aos="fade-up"
+              data-aos-duration="1300"
+            >
+              Let Us Help <span class="business">You Reach </span>Your Financial
+              Goals
+            </h2>
+            <p
+              aria-current="page"
+              data-translation-key="contact_description"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+            >
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio
+              dignissimos, facere recusandae officia quia porro magni alias
+              deleniti nostrum non cum, obcaecati eveniet laboriosam, qui quidem
+              pariatur. Repellendus, recusandae temporibus?
+            </p>
+            <div
+              data-aos="fade-right"
+              data-aos-duration="1200"
+              class="d-flex align-items-center mt-4 mb-4"
+            >
+              <div class="icone me-3">
+                <i class="bi bi-geo-alt"></i>
+              </div>
+              <div>
+                <p aria-current="page" data-translation-key="send_email">
+                  Send An Email
+                </p>
+                <h6 class="fw-bold">Kayley@consulting.com</h6>
+              </div>
+            </div>
+            <div
+              data-aos="fade-right"
+              data-aos-duration="1400"
+              class="d-flex align-items-center"
+            >
+              <div class="icone me-3">
+                <i class="bi bi-envelope"></i>
+              </div>
+              <div>
+                <p aria-current="page" data-translation-key="Office_Address">
+                  Office Address
+                </p>
+                <h6 class="fw-bold">
+                  50 Rte de Grundhof, 6550 Berdorf, Luxembourg
+                </h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 mt-5 animate__animated animate__fadeInRight">
+            <h3
+              aria-current="page"
+              data-translation-key="contact"
+              data-aos="fade-up"
+              data-aos-duration="1100"
+              class="mb-3"
+            >
+              Contact
+            </h3>
+
+            <form data-aos="fade-up" data-aos-duration="1400" action="">
+              <div class="row">
+                <div class="col mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="First name"
+                    aria-label="First name"
+                  />
+                </div>
+                <div class="col mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Last name"
+                    aria-label="Last name"
+                  />
+                </div>
+              </div>
+              <div class="mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Your Email"
+                  id="exampleInputPassword1"
+                />
+              </div>
+              <div class="mb-3">
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Select Service</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <textarea
+                  class="form-control"
+                  placeholder="Additional Info"
+                  id="exampleFormControlTextarea1"
+                  rows="3"
+                ></textarea>
+              </div>
+              <button class="button2">
+                <span
+                  class="button-content fw-bolder"
+                  aria-current="page"
+                  data-translation-key="btn_contact"
+                  >Send</span
+                >
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2574.1283869720955!2d6.3401053768531!3d49.82125213246718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47955f3e4172412b%3A0xaa9a672345ed2e91!2s50%20Rte%20de%20Grundhof%2C%206550%20Berdorf%2C%20Luxembourg!5e0!3m2!1sfr!2sma!4v1695286694407!5m2!1sfr!2sma"
+      width="100%"
+      height="550"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+
+    <!------------------------------------------------ Footer ------------------------------------->
+    <footer id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 mt-4">
+            <img id="logo_footer" class="logo" src="images/logo.png" alt="" />
+            <img
+              id="logo_footer_dark"
+              class="logo"
+              src="images/logodark.png"
+              alt=""
+            />
+            <p aria-current="page" data-translation-key="footer_desc">
+              Kayley is supporting its customers to create and manage changes
+              that matter. Our team includes passionate senior engineers. They
+              joined Kayley for the opportunity to apply their talents to
+              complex challenges. Kayley has a strong commitment to promoting
+              diversity and inclusion. We're present in Luxembourg, Belgium, UK
+              and France. Kayley is fully compliant with all in country taxes
+              and social security legislations.
+            </p>
+            <div class="icones d-flex mt-5">
+              <div class="icone me-3">
+                <a
+                  href="https://www.linkedin.com/company/kayley/"
+                  target="_blank"
+                  ><i class="bi bi-instagram"></i
+                ></a>
+              </div>
+              <div class="icone me-3">
+                <a
+                  href="https://www.linkedin.com/company/kayley/"
+                  target="_blank"
+                  ><i class="bi bi-twitter"></i
+                ></a>
+              </div>
+              <div class="icone me-3">
+                <a
+                  href="https://www.linkedin.com/company/kayley/"
+                  target="_blank"
+                  ><i class="bi bi-facebook"></i
+                ></a>
+              </div>
+              <div class="icone me-3">
+                <a
+                  href="https://www.linkedin.com/company/kayley/"
+                  target="_blank"
+                  ><i class="bi bi-linkedin"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 mt-4">
+            <h3>Disvover</h3>
+            <ul>
+              <li><a href="">Learn</a></li>
+              <li><a href="">Blog</a></li>
+              <li><a href="">Pricing</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 mt-4">
+            <h3>Links</h3>
+            <ul>
+              <li>
+                <a
+                  aria-current="page"
+                  data-translation-key="about"
+                  href="about.html"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  aria-current="page"
+                  data-translation-key="service"
+                  href="services.html"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  aria-current="page"
+                  data-translation-key="blog"
+                  href="blog.html"
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a
+                  aria-current="page"
+                  data-translation-key="contact"
+                  href="contact.html"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 mt-4">
+            <h3>Get In Touch</h3>
+            <p>50 Rte de Grundhof, 6550 Berdorf, Luxembourg</p>
+            <div class="mt-5">
+              <div class="d-flex align-items-center">
+                <i id="catagorie4" class="bi bi-telephone-fill me-3 fs-5"></i>
+                <h6>+352 691 530 000</h6>
+              </div>
+              <div class="d-flex align-items-center mt-3">
+                <i id="catagorie4" class="bi bi-envelope-fill me-3 fs-5"></i>
+                <h6>Kayley@consulting.com</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="line"></div>
+        <p class="text-center">
+          @ 2023 All Rights Reserved By Kayley Consulting
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      // Wait for the DOM to load
+      document.addEventListener("DOMContentLoaded", function () {
+        // Simulate a 1-second delay (adjust the delay as needed)
+        setTimeout(function () {
+          // Hide the loading message by adding the "hide" class
+          document.getElementById("loading-message").classList.add("hide");
+
+          // Initialize AOS
+          AOS.init();
+        }, 200); // 1000 milliseconds = 1 second
+      });
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      console.log("Initializing AOS...");
+      document.addEventListener("DOMContentLoaded", function () {
+        AOS.init();
+        console.log("AOS initialized.");
+      });
+    </script>
+    <script src="bar.js"></script>
+    <script src="links.js"></script>
+    <script src="darkmode.js"></script>
+    <script src="languages.js"></script>
+    <script src="script.js"></script>
+    <script src="load.js"></script>
+  </body>
+</html>
